@@ -1,0 +1,82 @@
+/* All pages */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-image: linear-gradient(to right, #f0dcdf , #ffb7cb);
+	font-family: Arial narrow;
+}
+
+.logo {
+	margin-left: 20px;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	margin-top: -70px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px;
+    background-color: #732335;
+}
+
+.main {
+	margin-top: 60px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Home page */
+
+.h1-titles {
+	margin-left: 20px;
+	border-bottom: 3px solid black;
+	font-family: papyrus;
+}
+
+.collection, .review {
+	margin: 10px 0 0 20px;
+}
+
+.review-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+
+}
+
+.review-container > div {
+	background-color: white;
+	padding: 20px;
+}
+
+.review {
+	border: 1px solid;
+	box-shadow: 5px 10px #888888;
+}
+
+.image-review {
+	float:left;
+	margin-right: 10px;
+}
+
+.footer {
+	font-family: Trebuchet MS;
+	margin-top: 30px;
+	background-color: #a55ea7;
+	text-align: center;
+	padding: 50px;
+}
+
+.social-links {
+	margin-top: 20px;
+}
