@@ -46,6 +46,7 @@ a {
 
 .collection, .review {
 	margin: 10px 0 0 20px;
+	cursor: pointer;
 }
 
 .review-container {
@@ -80,3 +81,18 @@ a {
 .social-links {
 	margin-top: 20px;
 }
+
+.modal {
+	margin:  auto auto;
+	width: 350px;
+	padding: 20px;
+}
+
+.imageRow {
+	display: flex;
+}
+
+.imagespace {
+	padding: 5px;
+}
+
