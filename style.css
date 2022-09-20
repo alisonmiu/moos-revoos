@@ -11,7 +11,7 @@ body {
 }
 
 .logo {
-	margin-left: 20px;
+	margin: 20px 0 0 20px;
 }
 
 .search {
@@ -70,6 +70,14 @@ a {
 	margin-right: 10px;
 }
 
+.imageRow {
+	display: flex;
+}
+
+.imagespace {
+	padding: 5px;
+}
+
 .footer {
 	font-family: Trebuchet MS;
 	margin-top: 30px;
@@ -88,11 +96,68 @@ a {
 	padding: 20px;
 }
 
-.imageRow {
-	display: flex;
+.close {
+	float: right;
 }
 
-.imagespace {
-	padding: 5px;
+.gallery {
+	display: block;
 }
 
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: auto;
+}
+
+div.gallery img {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: auto auto;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:  800px) {
+
+/* Home Page */
+.logo {
+	display: block;
+	margin: 20px auto 0 auto;
+}
+
+.search {
+	margin: 15px auto 0 auto;
+}
+
+.main {
+	margin-top: 30px;
+}
+
+.review-container {
+	display: grid;
+	grid-template-columns: auto;
+	padding: 20px;
+	grid-gap: 15px;
+}
+
+.review-container > div {
+	background-color: white;
+	padding: 20px;
+}
+
+.review {
+	border: 1px solid;
+	box-shadow: 5px 10px #888888;
+}
+
+.collection {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin: auto auto;
+}
