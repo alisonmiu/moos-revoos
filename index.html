@@ -17,11 +17,10 @@
 
 		
 		<a href="index.html"><img src="images/cow-logo.png" class="logo"></a>
-		
-		<div class="search">
-			<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
-			<input type="submit" value="Submit">
-		</div>
+			<div class="search">
+				<input id="searchbar" onkeyup="search_actor()" type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
+				<input type="submit" value="Submit">
+			</div>
 
 	<div class="main"><!-- Start main -->
 
@@ -59,17 +58,27 @@
 			<div class="imageRow"><!-- Align collection images next to each other -->
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/princess.jpg" alt="princessdiaries">
+						<img src="images/princess.jpg" alt="princessdiaries" class="movie">
 					</div>
 					<dialog class="modal">
-						<button class="close">X</button>
+						<button class="close" style="close">X</button>
 						Mia Thermopolis has just found out that she is the heir apparent to the throne of Genovia. With her friends Lilly and Michael Moscovitz in tow, she tries to navigate through the rest of her sixteenth year.
 					</dialog>
 				</div><!--End of movie description box -->
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/cobra.jpg" alt="cobrakai">
+						<img src="images/10things.jpg" alt="10things" class="movie">
+					</div>
+					<dialog class="modal">
+						<button class="close" style="close">X</button>
+						A pretty, popular teenager can't go out on a date until her ill-tempered older sister does.
+					</dialog>
+				</div><!--End of movie description box -->
+
+				<div class="movieDesc"><!-- Movie description box -->
+					<div class="imagespace">
+						<img src="images/cobra.jpg" alt="cobrakai" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -79,7 +88,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/legally.jpg" alt="legallyblonde">
+						<img src="images/legally.jpg" alt="legallyblonde" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -89,7 +98,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/whitechicks.jpg" alt="whitechicks">
+						<img src="images/whitechicks.jpg" alt="whitechicks" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -99,7 +108,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/freaky.jpg" alt="freakyfriday">
+						<img src="images/freaky.jpg" alt="freakyfriday" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -109,7 +118,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/rushhour.jpg" alt="rushhour">
+						<img src="images/rushhour.jpg" alt="rushhour" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -119,7 +128,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/nutty.jpg" alt="nuttyprofessor">
+						<img src="images/nutty.jpg" alt="nuttyprofessor" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -136,7 +145,7 @@
 			<div class="imageRow"><!-- Align collection images next to each other -->
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/suddenly.jpg" alt="suddenly">
+						<img src="images/suddenly.jpg" alt="suddenly" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -146,7 +155,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/nanny.jpg" alt="nanny">
+						<img src="images/nanny.jpg" alt="nanny" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -156,7 +165,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/stranger.jpg" alt="stranger">
+						<img src="images/stranger.jpg" alt="stranger" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -166,7 +175,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/bicentennial.jpg" alt="bicentennialman">
+						<img src="images/bicentennial.jpg" alt="bicentennialman" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -176,7 +185,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/whitechicks.jpg" alt="whitechicks">
+						<img src="images/whitechicks.jpg" alt="whitechicks" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -186,7 +195,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/matilda.jpg" alt="matilda">
+						<img src="images/matilda.jpg" alt="matilda" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -196,7 +205,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/cobra.jpg" alt="cobrakai">
+						<img src="images/cobra.jpg" alt="cobrakai" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -206,7 +215,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/friends.jpg" alt="friends">
+						<img src="images/friends.jpg" alt="friends" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -220,33 +229,73 @@
 		<br>
 
 		<h1 class="h1-titles">Top Male Actors</h1>
-		<div class="collection">
-			<img src="images/actors/robin.jpg" alt="robinwilliams">
-			<img src="images/actors/leonardo.jpg" alt="leonardodicaprio">
-			<img src="images/actors/jackie.jpg" alt="jackiechan">
-			<img src="images/actors/dwayne.jpg" alt="therock">
-			<img src="images/actors/danny.jpg" alt="dannydevito">
-			<img src="images/actors/eddie.jpg" alt="eddiemurphy">
-		</div>
+		<div class="collection"><!--Male collection -->
+			<div class="gallery">
+				<img src="images/actors/robin.jpg" alt="robinwilliams">
+				<div class="desc" class="actor" >Robin Williams</div>
+			</div>
+			<div class="gallery">
+				<img src="images/actors/leonardo.jpg" alt="leonardodicaprio">
+				<div class="desc" class="actor">Leonardo DiCaprio</div>
+			</div>
+			<div class="gallery">
+				<img src="images/actors/jackie.jpg" alt="jackiechan">
+				<div class="desc" class="actor">Jackie Chan</div>
+			</div>
+			<div class="gallery">
+				<img src="images/actors/dwayne.jpg" alt="therock">
+				<div class="desc" class="actor">The Rock</div>
+			</div>
+			<div class="gallery">
+				<img src="images/actors/danny.jpg" alt="dannydevito">
+				<div class="desc" class="actor">Danny Devito</div>
+			</div>
+			<div class="gallery">
+				<img src="images/actors/eddie.jpg" alt="eddiemurphy">
+				<div class="desc" class="actor">Eddie Murphy</div>
+			</div>
+		</div><!-- End of male collection -->
 
-		<br>
+<div style="clear: both;">
 
 		<h1 class="h1-titles">Top Female Actresses</h1>
-		<div class="collection">
-			<img src="images/actors/julia.jpg" alt="juliaroberts">
-			<img src="images/actors/sandra.jpg" alt="sandrabullock">
-			<img src="images/actors/kate.jpg" alt="katewinslet">
-			<img src="images/actors/julie.jpg" alt="julieandrews">
-			<img src="images/actors/sally.jpg" alt="sallyfield">
-			<img src="images/actors/drew.jpg" alt="drewbarrymore">
-		</div>
+		<div class="collection"><!-- Female collection -->
+			<div class="gallery">
+				<img src="images/actors/julia.jpg" alt="juliaroberts">
+				<div class="desc" class="actor">Julia Roberts</div>
+			</div>
+			<div class="gallery">
+				<img src="images/actors/sandra.jpg" alt="sandrabullock">
+				<div class="desc" class="actor">Sandra Bullock</div>
+			</div>
+			<div class="gallery">
+				<img src="images/actors/kate.jpg" alt="katewinslet">
+				<div class="desc" class="actor">Kate Blanchett</div>
+			</div>
+			<div class="gallery">
+				<img src="images/actors/julie.jpg" alt="julieandrews">
+				<div class="desc" class="actor">Julie Andrews</div>
+			</div>
+			<div class="gallery">
+				<img src="images/actors/sally.jpg" alt="sallyfield">
+				<div class="desc" class="actor">Sally Fields</div>
+			</div>
+			<div class="gallery">
+				<img src="images/actors/drew.jpg" alt="drewbarrymore">
+				<div class="desc" class="actor">Drew Barrymore</div>
+			</div>
+		</div><!-- End of female collection -->
 		
 	</div><!--End main -->
 
+	<div style="clear:both;">
+
 		<div class="footer">
 			<h2>Newsletter sign up:</h2>
-				<input type="text" id="email" name="email" placeholder="Enter your email" style="margin-top: 10px;">
-				<input type="submit" value="Submit">
+				<form onsubmit="myFunction()" style="margin-top: 10px;">
+					<input type="text" placeholder="Enter your email">
+					<input type="submit">
+				</form>
 
 			<div class="social-links">
 					<img src="images/insta.png">
