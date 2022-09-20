@@ -135,6 +135,7 @@ div.desc {
 .logo {
 	display: block;
 	margin: 20px auto 0 auto;
+	width: 600px;
 }
 
 .search {
@@ -168,8 +169,18 @@ div.desc {
 	padding: 20px;
 }
 
+div.gallery img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: auto auto;
+}
+
 img {
 	width: 125px;
 }
 
+.social-image {
+	width: 50px;
+}
 
