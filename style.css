@@ -123,8 +123,11 @@ div.desc {
   text-align: center;
 }
 
-/* Use a media query to add a break point at 414px: */
-@media screen and (max-width:  414px) {
+/* 2436x1125px at 458ppi */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { }
 
 /* Home Page */
 .logo {
