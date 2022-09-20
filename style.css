@@ -123,11 +123,7 @@ div.desc {
   text-align: center;
 }
 
-/* 2436x1125px at 458ppi */
-@media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3) { }
+@media only screen and (min-width: 414px)
 
 /* Home Page */
 .logo {
