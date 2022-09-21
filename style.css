@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+	font-size: 1rem;
+}
+
 body {
 	background-image: linear-gradient(to right, #f0dcdf , #ffb7cb);
 	font-family: Arial narrow;
@@ -39,7 +43,7 @@ a {
 /* Home page */
 
 .h1-titles {
-	margin-left: 20px;
+	margin: 20px 0 0 10px;
 	border-bottom: 3px solid black;
 	font-family: papyrus;
 }
@@ -81,6 +85,7 @@ a {
 
 .footer {
 	font-family: Trebuchet MS;
+	font-size: 2rem;
 	margin-top: 30px;
 	background-color: #a55ea7;
 	text-align: center;
@@ -129,7 +134,11 @@ div.desc {
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+ html {
+	font-size: 1rem;
+}
 
 /* Home Page */
 .logo {
@@ -138,8 +147,13 @@ div.desc {
 	width: 600px;
 }
 
+.nav {
+	font-size: 3rem;
+}
+
 .search {
 	margin: 15px auto 0 auto;
+	padding: 10px;
 }
 
 .main {
@@ -167,6 +181,8 @@ div.desc {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	padding: 20px;
+	font-size: 2rem;
+	margin: 10px 0 0 10px;
 }
 
 div.gallery img {
@@ -180,7 +196,34 @@ img {
 	width: 125px;
 }
 
+.footer {
+	font-family: Trebuchet MS;
+	font-size: 2rem;
+	margin-top: 30px;
+	background-color: #a55ea7;
+	text-align: center;
+	padding: 50px;
+}
+
 .social-image {
 	width: 50px;
+}
+
+/* Actors page */
+
+.h1-titles {
+	margin: 20px 0 0 10px;
+	border-bottom: 3px solid black;
+	font-family: papyrus;
+}
+
+.imgActor {
+	float: left;
+	margin: 10px 10px 0 20px;
+}
+
+.bio {
+	margin-top: 10px;
+	font-size: 12px;
 }
 
