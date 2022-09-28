@@ -2,7 +2,7 @@
 	<head>
 		<title>Moo's Revoos</title>
 		<link href="style.css" rel="stylesheet">
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
@@ -18,8 +18,8 @@
 		
 		<a href="index.html"><img src="images/cow-logo.png" class="logo"></a>
 			<div class="search">
-				<input id="searchbar" onkeyup="search_actor()" type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
-				<input type="submit" value="Submit">
+				<input id="searchbar" type="text" name="search" size="30" style="padding:10px" placeholder="Search movies, TV, actors, more...">
+				<input type="submit" value="Submit" style="padding:10px">
 			</div>
 
 	<div class="main"><!-- Start main -->
@@ -27,38 +27,60 @@
 		<h1 class="h1-titles">Latest Movie Reviews</h1>
 		<div class="review-container"><!-- Start of grid container -->
 			<div class="review">
-				<img src="images/wendell.jpg" alt="wendell" class="image-review">
+				<img src="images/movies/dontworry.jpg" alt="dont worry darling" class="image-review">
+				<h3>Don't Worry Darling</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus diam. Nulla nec maximus nulla, ut tempor velit. Duis semper tempus eros, vel gravida mi efficitur sit amet. Suspendisse mauris orci, imperdiet tincidunt purus sit amet, efficitur eleifend nisi. Ut laoreet vitae dolor in commodo. Curabitur rhoncus dapibus fringilla. Curabitur et ultrices libero. Duis consectetur mattis nulla.</p>
+			</div>
+
+			<div class="review">
+				<img src="images/movies/ticket.jpg" alt="tickettoparadise" class="image-review">
+				<h3>Ticket to Paradise</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus diam. Nulla nec maximus nulla, ut tempor velit. Duis semper tempus eros, vel gravida mi efficitur sit amet. Suspendisse mauris orci, imperdiet tincidunt purus sit amet, efficitur eleifend nisi. Ut laoreet vitae dolor in commodo. Curabitur rhoncus dapibus fringilla. Curabitur et ultrices libero. Duis consectetur mattis nulla.</p>
+			</div>
+
+			<div class="review">
+				<img src="images/movies/wendell.jpg" alt="wendell" class="image-review">
 				<h3>Wendell Wild</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus diam. Nulla nec maximus nulla, ut tempor velit. Duis semper tempus eros, vel gravida mi efficitur sit amet. Suspendisse mauris orci, imperdiet tincidunt purus sit amet, efficitur eleifend nisi. Ut laoreet vitae dolor in commodo. Curabitur rhoncus dapibus fringilla. Curabitur et ultrices libero. Duis consectetur mattis nulla.</p>
 			</div>
 	
 			<div class="review">
-				<img src="images/policeman.jpg" alt="poliaceman" class="image-review">
+				<img src="images/movies/policeman.jpg" alt="poliaceman" class="image-review">
 				<h3>Policeman</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus diam. Nulla nec maximus nulla, ut tempor velit. Duis semper tempus eros, vel gravida mi efficitur sit amet. Suspendisse mauris orci, imperdiet tincidunt purus sit amet, efficitur eleifend nisi. Ut laoreet vitae dolor in commodo. Curabitur rhoncus dapibus fringilla. Curabitur et ultrices libero. Duis consectetur mattis nulla.</p>
 			</div>
 
 			<div class="review">
-				<img src="images/grease.jpg" alt="grease" class="image-review">
+				<img src="images/movies/grease.jpg" alt="grease" class="image-review">
 				<h3>Grease</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus diam. Nulla nec maximus nulla, ut tempor velit. Duis semper tempus eros, vel gravida mi efficitur sit amet. Suspendisse mauris orci, imperdiet tincidunt purus sit amet, efficitur eleifend nisi. Ut laoreet vitae dolor in commodo. Curabitur rhoncus dapibus fringilla. Curabitur et ultrices libero. Duis consectetur mattis nulla.</p>
 			</div>
 
 			<div class="review">
-				<img src="images/intime.jpg" alt="intime" class="image-review">
+				<img src="images/movies/intime.jpg" alt="intime" class="image-review">
 				<h3>In Time</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus diam. Nulla nec maximus nulla, ut tempor velit. Duis semper tempus eros, vel gravida mi efficitur sit amet. Suspendisse mauris orci, imperdiet tincidunt purus sit amet, efficitur eleifend nisi. Ut laoreet vitae dolor in commodo. Curabitur rhoncus dapibus fringilla. Curabitur et ultrices libero. Duis consectetur mattis nulla.</p>
 			</div>
 		</div><!-- End of grid container -->
 
-		<br>
 
 		<h1 class="h1-titles">My all time Favourites</h1>
+		
 		<div class="collection modals"><!-- Movie Collection -->
 			<div class="imageRow"><!-- Align collection images next to each other -->
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/princess.jpg" alt="princessdiaries" class="movie">
+						<img src="images/movies/10things.jpg" alt="10thingsIhateAboutYou" class="movie">
+					</div>
+					<dialog class="modal">
+						<button class="close" style="close">X</button>
+						A pretty, popular teenager can't go out on a date until her ill-tempered older sister does.
+					</dialog>
+				</div><!--End of movie description box -->
+
+				<div class="movieDesc"><!-- Movie description box -->
+					<div class="imagespace">
+						<img src="images/movies/princess.jpg" alt="princessdiaries" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close" style="close">X</button>
@@ -68,7 +90,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/cobra.jpg" alt="cobrakai" class="movie">
+						<img src="images/movies/cobra.jpg" alt="cobrakai" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -78,7 +100,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/legally.jpg" alt="legallyblonde" class="movie">
+						<img src="images/movies/legally.jpg" alt="legallyblonde" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -88,7 +110,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/whitechicks.jpg" alt="whitechicks" class="movie">
+						<img src="images/movies/whitechicks.jpg" alt="whitechicks" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -98,7 +120,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/freaky.jpg" alt="freakyfriday" class="movie">
+						<img src="images/movies/freaky.jpg" alt="freakyfriday" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -108,7 +130,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/rushhour.jpg" alt="rushhour" class="movie">
+						<img src="images/movies/rushhour.jpg" alt="rushhour" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -118,7 +140,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/nutty.jpg" alt="nuttyprofessor" class="movie">
+						<img src="images/movies/nutty.jpg" alt="nuttyprofessor" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -128,14 +150,13 @@
 			</div><!--End of image alignment -->
 		</div><!-- End of movie collection -->
 
-		<br>
 
 		<h1 class="h1-titles">Popular on Netflix</h1>
 		<div class="collection modals"><!-- Movie Collection -->
 			<div class="imageRow"><!-- Align collection images next to each other -->
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/suddenly.jpg" alt="suddenly" class="movie">
+						<img src="images/movies/suddenly.jpg" alt="suddenly" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -145,7 +166,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/nanny.jpg" alt="nanny" class="movie">
+						<img src="images/movies/nanny.jpg" alt="nanny" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -155,7 +176,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/stranger.jpg" alt="stranger" class="movie">
+						<img src="images/movies/stranger.jpg" alt="stranger" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -165,7 +186,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/bicentennial.jpg" alt="bicentennialman" class="movie">
+						<img src="images/movies/bicentennial.jpg" alt="bicentennialman" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -175,7 +196,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/whitechicks.jpg" alt="whitechicks" class="movie">
+						<img src="images/movies/whitechicks.jpg" alt="whitechicks" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -185,7 +206,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/matilda.jpg" alt="matilda" class="movie">
+						<img src="images/movies/matilda.jpg" alt="matilda" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -195,7 +216,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/cobra.jpg" alt="cobrakai" class="movie">
+						<img src="images/movies/cobra.jpg" alt="cobrakai" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -205,7 +226,7 @@
 
 				<div class="movieDesc"><!-- Movie description box -->
 					<div class="imagespace">
-						<img src="images/friends.jpg" alt="friends" class="movie">
+						<img src="images/movies/friends.jpg" alt="friends" class="movie">
 					</div>
 					<dialog class="modal">
 						<button class="close">X</button>
@@ -216,63 +237,63 @@
 		</div><!-- End of movie collection -->
 
 
-		<br>
+
 
 		<h1 class="h1-titles">Top Male Actors</h1>
 		<div class="collection"><!--Male collection -->
 			<div class="gallery">
-				<img src="images/actors/robin.jpg" alt="robinwilliams">
-				<div class="desc" class="actor" >Robin Williams</div>
-			</div>
-			<div class="gallery">
 				<img src="images/actors/leonardo.jpg" alt="leonardodicaprio">
-				<div class="desc" class="actor">Leonardo DiCaprio</div>
+				<a href="leonardo.html"><div class="actorName">Leonardo DiCaprio</div></a>
 			</div>
 			<div class="gallery">
+				<img src="images/actors/robin.jpg" alt="robinwilliams">
+				<div class="actorName" >Robin Williams</div>
+			</div>
+			<div class="gallery jackie">
 				<img src="images/actors/jackie.jpg" alt="jackiechan">
-				<div class="desc" class="actor">Jackie Chan</div>
+				<div class="actorName">Jackie Chan</div>
 			</div>
 			<div class="gallery">
 				<img src="images/actors/dwayne.jpg" alt="therock">
-				<div class="desc" class="actor">The Rock</div>
+				<div class="actorName">The Rock</div>
 			</div>
 			<div class="gallery">
 				<img src="images/actors/danny.jpg" alt="dannydevito">
-				<div class="desc" class="actor">Danny Devito</div>
+				<div class="actorName">Danny Devito</div>
 			</div>
 			<div class="gallery">
 				<img src="images/actors/eddie.jpg" alt="eddiemurphy">
-				<div class="desc" class="actor">Eddie Murphy</div>
+				<div class="actorName">Eddie Murphy</div>
 			</div>
 		</div><!-- End of male collection -->
 
-<div style="clear: both;">
+<div style="clear:both">
 
 		<h1 class="h1-titles">Top Female Actresses</h1>
 		<div class="collection"><!-- Female collection -->
 			<div class="gallery">
 				<img src="images/actors/julia.jpg" alt="juliaroberts">
-				<div class="desc" class="actor">Julia Roberts</div>
+				<div class="actorName">Julia Roberts</div>
 			</div>
 			<div class="gallery">
 				<img src="images/actors/sandra.jpg" alt="sandrabullock">
-				<div class="desc" class="actor">Sandra Bullock</div>
+				<div class="actorName">Sandra Bullock</div>
 			</div>
 			<div class="gallery">
 				<img src="images/actors/kate.jpg" alt="katewinslet">
-				<div class="desc" class="actor">Kate Blanchett</div>
+				<div class="actorName">Kate Blanchett</div>
 			</div>
 			<div class="gallery">
 				<img src="images/actors/julie.jpg" alt="julieandrews">
-				<div class="desc" class="actor">Julie Andrews</div>
+				<div class="actorName">Julie Andrews</div>
 			</div>
 			<div class="gallery">
 				<img src="images/actors/sally.jpg" alt="sallyfield">
-				<div class="desc" class="actor">Sally Fields</div>
+				<div class="actorName">Sally Fields</div>
 			</div>
 			<div class="gallery">
 				<img src="images/actors/drew.jpg" alt="drewbarrymore">
-				<div class="desc" class="actor">Drew Barrymore</div>
+				<div class="actorName">Drew Barrymore</div>
 			</div>
 		</div><!-- End of female collection -->
 		
@@ -282,15 +303,15 @@
 
 		<div class="footer">
 			<h2>Newsletter sign up:</h2>
-				<form onsubmit="myFunction()" style="margin-top: 10px;">
-					<input type="text" placeholder="Enter your email">
+				<form class="subscribe">
+					<input type="text" size="35" placeholder="Enter your email" style="padding: 10px;">
 					<input type="submit">
 				</form>
 
 			<div class="social-links">
-					<img src="images/insta.png" class="social-image">
-					<img src="images/facebook.png" class="social-image">
-					<img src="images/twitter.png" class="social-image">
+					<img src="images/insta.png">
+					<img src="images/facebook.png">
+					<img src="images/twitter.png">
 			</div>
 		</div><!--End of footer-->
 	</body>
