@@ -1,12 +1,15 @@
+/* Mobile and default styles */
+
 /* All pages */
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-	font-size: 1rem;
+	font-size: 1em;
 }
 
 body {
@@ -15,32 +18,31 @@ body {
 }
 
 .logo {
-	margin: 20px 0 0 20px;
+	margin: 20px auto 0 auto;
+	display: block;
+	width: 300px;
 }
 
 .search {
 	display: flex;
 	justify-content: center;
 	margin-top: -70px;
+	margin: auto auto;
+	padding: 10px;
 }
 
 .nav {
 	display: flex;
 	justify-content: space-evenly;
 	padding: 10px;
-    background-color: #732335;
+  background-color: #732335;
+  font-size: 5vw;
+	margin-left: -15px;
 }
 
 .main {
-	margin-top: 60px;
+	margin-top: 20px;
 }
-
-a {
-	color: white;
-	text-decoration: none;
-}
-
-/* Home page */
 
 .h1-titles {
 	margin: 20px 0 0 10px;
@@ -48,26 +50,52 @@ a {
 	font-family: papyrus;
 }
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer {
+	font-family: Trebuchet MS;
+	font-size: 4vw;
+	margin-top: 30px;
+	background-color: #a55ea7;
+	text-align: center;
+	padding: 50px;
+}
+
+.social-links {
+	margin-top: 20px;
+}
+
+.subscribe {
+	margin-top: 10px;
+}
+
+
+/* Home page */
+
 .collection, .review {
 	margin: 10px 0 0 20px;
-	cursor: pointer;
 }
 
-.review-container {
+.collection {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
-
+	grid-template-columns: auto auto;
+	font-size: 5vw;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: red;*/
 }
 
-.review-container > div {
-	background-color: white;
-	padding: 20px;
+/* Grouped images of actors */
+
+div.gallery  {
+	margin-top: 20px;
+  margin: auto auto;
 }
 
-.review {
-	border: 1px solid;
-	box-shadow: 5px 10px #888888;
-}
 
 .image-review {
 	float:left;
@@ -83,21 +111,8 @@ a {
 	padding: 5px;
 }
 
-.footer {
-	font-family: Trebuchet MS;
-	font-size: 2rem;
-	margin-top: 30px;
-	background-color: #a55ea7;
-	text-align: center;
-	padding: 50px;
-}
-
-.social-links {
-	margin-top: 20px;
-}
-
 .modal {
-	margin:  auto auto;
+	margin: auto auto;
 	width: 350px;
 	padding: 20px;
 }
@@ -106,64 +121,62 @@ a {
 	float: right;
 }
 
-.gallery {
-	display: block;
+.gallery a {
+	color: purple;
+	text-decoration: underline;
 }
 
-div.gallery {
-  margin: 5px;
-  float: left;
-  width: auto;
-}
-
-div.gallery img {
+/*div.gallery img {
   width: auto;
   height: auto;
   display: block;
   margin: auto auto;
 }
+*/
 
-div.desc {
-  padding: 5px;
+div.actorName {
+	color: purple;
+  padding: 10px;
   text-align: center;
 }
 
-/* ----------- iPhone X ----------- */
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
+/* Actors page */
 
- html {
-	font-size: 1rem;
+.imgActor {
+	float: left;
+	margin: 10px 10px 0 20px;
 }
 
-/* Home Page */
-.logo {
-	display: block;
-	margin: 20px auto 0 auto;
-	width: 600px;
+.bio {
+	margin-top: 10px;
+	font-size: 20px;
 }
 
-.nav {
-	font-size: 3rem;
+.galleryRow {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
 }
 
-.search {
-	margin: 15px auto 0 auto;
-	padding: 10px;
+/* Create four equal columns that sits next to each other */
+.galleryColumn {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
-.main {
-	margin-top: 30px;
+.galleryColumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 .review-container {
 	display: grid;
 	grid-template-columns: auto;
-	padding: 20px;
+	margin-right: 35px;
+	padding: auto;
 	grid-gap: 15px;
 }
 
@@ -177,53 +190,409 @@ div.desc {
 	box-shadow: 5px 10px #888888;
 }
 
-.collection {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	padding: 20px;
-	font-size: 2rem;
-	margin: 10px 0 0 10px;
-}
-
 div.gallery img {
-  width: 200px;
+  width: 125px;
   height: auto;
   display: block;
-  margin: auto auto;
+  margin: 0 0 0 10px;
 }
 
-img {
-	width: 125px;
-}
-
-.footer {
-	font-family: Trebuchet MS;
-	font-size: 2rem;
-	margin-top: 30px;
-	background-color: #a55ea7;
-	text-align: center;
-	padding: 50px;
+div.desc {
+	margin: 0 0 0 -20px;
 }
 
 .social-image {
-	width: 50px;
+	width: 20px;
 }
 
-/* Actors page */
-
-.h1-titles {
-	margin: 20px 0 0 10px;
-	border-bottom: 3px solid black;
-	font-family: papyrus;
+/* Responsive layout - makes a two column-layout instead of four columns */
+.galleryColumn {
+  -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
 }
 
-.imgActor {
-	float: left;
-	margin: 10px 10px 0 20px;
+/* Tablet styles */
+@media only screen and (min-width: 541px) and (max-width: 780px) {
+  body {
+		font-size: 4.5vw;
+	}
+
+	.logo {
+		width: 400px;
+	}
+
+	.search {
+		display: flex;
+		padding: 10px;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 10px;
+	  background-color: #732335;
+	  font-size: 4vw;
+		margin-left: -30px;
+	}
+
+/*
+	.main {
+		margin-top: 30px;
+	}
+*/
+
+	.h1-titles {
+		margin: 20px 0 0 10px;
+		border-bottom: 3px solid black;
+		font-family: papyrus;
+		font-size: 6vw;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.footer {
+		font-family: Trebuchet MS;
+		font-size: 4vw;
+		margin-top: 30px;
+		background-color: #a55ea7;
+		text-align: center;
+		padding: 50px;
+	}
+
+	.social-links {
+		margin-top: 20px;
+	}
+
+	.subscribe {
+		margin-top: 10px;
+	}
+
+	
+	/* Home page */
+
+	.collection, .review {
+		margin: 10px 0 0 20px;
+	}
+
+	.collection {
+		display: grid;
+		grid-template-columns: auto auto;
+		font-size: 5vw;
+		margin: 20px 0 0 20px;
+		/*background-color: red;*/
+	}
+
+	.review-container {
+		display: grid;
+		grid-template-columns: auto auto;
+
+	}
+
+	.review-container > div {
+		background-color: white;
+		padding: 20px;
+	}
+
+	.review {
+		border: 1px solid;
+		box-shadow: 5px 10px #888888;
+	}
+
+	.image-review {
+		float:left;
+		margin-right: 10px;
+	}
+
+	.imageRow {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.imagespace {
+		padding: 5px;
+	}
+
+	.modal {
+		margin: auto auto;
+		width: 350px;
+		padding: 20px;
+	}
+
+	.close {
+		float: right;
+	}
+
+	.gallery {
+		display: grid;
+		color: purple;
+		/*background-color: green;*/
+	}
+
+	.gallery a {
+		color: purple;
+		text-decoration: underline;
+	}
+
+	div.gallery {
+	  margin: 5px;
+	  float: left;
+	  width: auto;
+	}
+
+	div.gallery img {
+	  width: 160px;
+	  height: auto;
+	  display: block;
+	  margin: auto auto;
+	}
+
+	div.desc {
+	  padding: 5px;
+	  text-align: center;
+	}
+
+	div.actorName {
+	color: purple;
+  padding: 10px;
+  text-align: center;
 }
 
-.bio {
-	margin-top: 10px;
-	font-size: 12px;
+
+	/* Actors page */
+
+	.imgActor {
+		float: left;
+		margin: 10px 10px 0 20px;
+	}
+
+	.bio {
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.galleryRow {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 4px;
+	}
+
+	.social-image {
+		width: 20px;
+	}
+
+	/* Create four equal columns that sits next to each other */
+	.galleryColumn {
+	  flex: 25%;
+	  max-width: 25%;
+	  padding: 0 4px;
+	}
+
+	.galleryColumn img {
+	  margin-top: 8px;
+	  vertical-align: middle;
+	  width: 100%;
+	}
 }
 
+/* Desktop styles */
+@media only screen and (min-width: 781px) {
+ 	body {
+		font-size: 1.5vw;
+		/*background-color: yellow;*/
+	}
+
+	.logo {
+		width: 400px;
+	}
+
+	.search {
+		display: flex;
+		justify-content: center;
+		margin-top: -70px;
+		margin: auto auto;
+		padding: 10px;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 10px;
+	  background-color: #732335;
+	  font-size: 2vw;
+		margin-left: -15px;
+	}
+
+	.h1-titles {
+		margin: 20px 0 0 10px;
+		border-bottom: 3px solid black;
+		font-family: papyrus;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.footer {
+		font-family: Trebuchet MS;
+		font-size: 1.5vw;
+		margin-top: 30px;
+		background-color: #a55ea7;
+		text-align: center;
+		padding: 50px;
+	}
+
+	.social-links {
+		margin-top: 20px;
+	}
+
+	.social-links > img {
+		width: 30px;
+	}
+
+	.subscribe {
+		margin-top: 10px;
+	}
+
+
+	/* Home page */
+
+	.collection {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		font-size: 2vw;
+	}
+
+	.review {
+		border: 1px solid;
+		box-shadow: 5px 10px #888888;
+	}
+
+	.review-container {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		margin-right: 35px;
+		padding: auto;
+		grid-gap: 15px;
+	}
+
+	.review-container > div {
+		background-color: white;
+		padding: 20px;
+	}
+
+	.collection, .review {
+		margin: 10px 0 0 20px;
+		/*background-color: green;*/
+	}
+
+	div.gallery img {
+	  width: 125px;
+	  height: auto;
+	  display: block;
+	  margin: 0 0 0 10px;
+	}
+
+	div.desc {
+		margin: 0 0 0 -20px;
+	}
+
+	.social-image {
+		width: 20px;
+	}
+
+
+	/* Grouped images of actors */
+
+	div.gallery  {
+		margin-top: 20px;
+	  margin: auto auto;
+	}
+
+
+	.image-review {
+		float:left;
+		margin-right: 10px;
+	}
+
+	.imageRow {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.imagespace {
+		padding: 5px;
+	}
+
+	.modal {
+		margin: auto auto;
+		width: 350px;
+		padding: 20px;
+	}
+
+	.close {
+		float: right;
+	}
+
+	.gallery a {
+		color: purple;
+		text-decoration: underline;
+	}
+
+	/*div.gallery img {
+	  width: auto;
+	  height: auto;
+	  display: block;
+	  margin: auto auto;
+	}
+	*/
+
+	div.actorName {
+		color: purple;
+	  padding: 10px;
+	  text-align: center;
+	}
+
+
+	/* Actors page */
+
+	.imgActor {
+		float: left;
+		margin: 10px 10px 0 20px;
+	}
+
+	.bio {
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.galleryRow {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 4px;
+	}
+
+	/* Create four equal columns that sits next to each other */
+	.galleryColumn {
+	  flex: 25%;
+	  max-width: 25%;
+	  padding: 0 4px;
+	}
+
+	.galleryColumn img {
+	  margin-top: 8px;
+	  vertical-align: middle;
+	  width: 100%;
+	}
+
+	/* Responsive layout - makes a two column-layout instead of four columns */
+	.galleryColumn {
+	  -ms-flex: 50%;
+	    flex: 50%;
+	    max-width: 50%;
+	}
+}
