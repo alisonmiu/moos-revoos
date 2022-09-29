@@ -412,7 +412,6 @@ div.desc {
 
 	.search {
 		display: flex;
-		justify-content: right;
 		margin-top: -110px;
 		padding: 10px;
 	}
@@ -422,7 +421,7 @@ div.desc {
 		justify-content: space-evenly;
 		padding: 10px;
 	  background-color: #732335;
-	  font-size: 2vw;
+	  font-size: 1.5vw;
 		margin-left: -15px;
 	}
 
@@ -430,7 +429,7 @@ div.desc {
 		margin: 65px 10px 0 20px;
 		border-bottom: 3px solid black;
 		font-family: papyrus;
-		font-family: 2.5vw;
+		font-size: 2.5vw;
 	}
 
 	a {
