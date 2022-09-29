@@ -430,6 +430,7 @@ div.desc {
 		margin: 65px 10px 0 20px;
 		border-bottom: 3px solid black;
 		font-family: papyrus;
+		font-family: 2.5vw;
 	}
 
 	a {
@@ -470,6 +471,7 @@ div.desc {
 	.review {
 		border: 1px solid;
 		box-shadow: 5px 10px #888888;
+		font-size: 1.1vw;
 	}
 
 	.review-container {
@@ -486,7 +488,8 @@ div.desc {
 	}
 
 	.collection, .review {
-		margin: 30px 0 20px 20px;
+		margin: 20px 0 20px 20px;
+		cursor: pointer;
 		/*background-color: green;*/
 	}
 
